@@ -84,8 +84,7 @@ h1 {
     background-color: white;
     margin-left: 0;
     border-radius: 0px 10px 10px 0px;
-    box-shadow: 30px black;
-    /* HELP - box shadow not working. */
+    box-shadow: 8px 8px 4px 0px rgb(70, 68, 68);
 }
 
 figure {
@@ -98,6 +97,7 @@ figure {
 
 figure img {
     margin: 0;
+    border-radius: 0px 0px 10px 10px;
 }
 
 figcaption {
@@ -111,4 +111,13 @@ figcaption {
     background-color: white;
     padding: 5px; 
     border-radius: 10px 0px 0px 10px;
+}
+
+
+/* Footer elements */
+
+footer {
+    text-align: center;
+    background-color: tan;
+    border-radius: 10px 10px 10px 10px;
 }
