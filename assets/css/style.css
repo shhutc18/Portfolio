@@ -1,12 +1,11 @@
 header {
-    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: tan;
     color: rgb(78, 48, 36);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    /* How to make no space between header/nav and hero picture? */
+    margin-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
 }
 
 nav {
@@ -29,28 +28,15 @@ nav ul li {
 
 nav a {
     color: rgb(78, 48, 36);
+    border-bottom: 3px solid #000;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     background-color: moccasin;
 }
 
-.left-column {
-    width: 25%; /* Adjust as needed */
-    /* Add any other styles you want for the left column */
-}
-
-.left-column img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
 .main-content {
-    width: 75%; /* Adjust as needed */
-    /* Add any other styles you want for the main content */
+    width: 75%;
 }
 
 .content {
@@ -60,34 +46,54 @@ body {
 
 .content ul {
     display: flex;
-    gap: 20px; /* Adjust as needed */
+    gap: 20px;
     list-style-type: none;
     font-size: 30px;
 }
 
 .content h2 {
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 20px;
     font-size: 40px;
-    border-right: 5px solid #000; /* Adjust color as needed */
-    padding-right: 20px; /* Adjust as needed */
+    border-right: 5px solid #000; 
+    padding-right: 20px; 
 }
 
 .content h3 {
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 20px; 
     font-size: 40px;
-    border-right: 5px solid #000; /* Adjust color as needed */
-    padding-right: 20px; /* Adjust as needed */
+    border-right: 5px solid #000; 
+    padding-right: 20px; 
 }
 
 .content h4 {
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 20px;
     font-size: 40px;
-    border-right: 5px solid #000; /* Adjust color as needed */
-    padding-right: 20px; /* Adjust as needed */
+    border-right: 5px solid #000;
+    padding-right: 20px;
 }
 
 #hero {
     width: 100%;
-    height: 30vh; /* Adjust as needed */
+    height: 30vh;
     border: none;
+}
+
+h1 {
+    border: 2px solid white;
+    padding: 10px; 
+    background-color: white;
+    margin-left: 0;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 30px black;
+    /* HELP - box shadow not working. */
+}
+
+figure {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+}
+
+figure img {
+    margin: 0;
 }
