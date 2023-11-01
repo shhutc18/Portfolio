@@ -1,0 +1,93 @@
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: tan;
+    color: rgb(78, 48, 36);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* How to make no space between header/nav and hero picture? */
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(78, 48, 36);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: moccasin;
+}
+
+.left-column {
+    width: 25%; /* Adjust as needed */
+    /* Add any other styles you want for the left column */
+}
+
+.left-column img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.main-content {
+    width: 75%; /* Adjust as needed */
+    /* Add any other styles you want for the main content */
+}
+
+.content {
+    display: flex;
+    align-items: center; /* This will center the items vertically */
+}
+
+.content ul {
+    display: flex;
+    gap: 20px; /* Adjust as needed */
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.content h2 {
+    margin-right: 20px; /* Adjust as needed */
+    font-size: 40px;
+    border-right: 5px solid #000; /* Adjust color as needed */
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.content h3 {
+    margin-right: 20px; /* Adjust as needed */
+    font-size: 40px;
+    border-right: 5px solid #000; /* Adjust color as needed */
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.content h4 {
+    margin-right: 20px; /* Adjust as needed */
+    font-size: 40px;
+    border-right: 5px solid #000; /* Adjust color as needed */
+    padding-right: 20px; /* Adjust as needed */
+}
+
+#hero {
+    width: 100%;
+    height: 30vh; /* Adjust as needed */
+    border: none;
+}
