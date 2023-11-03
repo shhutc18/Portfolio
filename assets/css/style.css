@@ -26,15 +26,6 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav a {
-    color: rgb(78, 48, 36);
-    border-bottom: 3px solid #000;
-    border: 2px solid rgb(211, 204, 204);
-    padding: 5px;
-    border-radius: 10px 10px 10px 10px;
-    text-decoration: none;
-}
-
 body {
     background-color: rgb(238, 228, 211);
 }
@@ -173,4 +164,19 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
 
 .wiggle {
     animation: wiggle 1s infinite;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(211, 204, 204);
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
 }
