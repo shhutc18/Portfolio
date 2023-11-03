@@ -29,52 +29,14 @@ nav ul li {
 nav a {
     color: rgb(78, 48, 36);
     border-bottom: 3px solid #000;
-    border: 2px solid rgb(211, 204, 204); /* Adjust color as needed */
-    padding: 5px; /* Adjust as needed */
-    background-color: rgb(221, 215, 215);
+    border: 2px solid rgb(211, 204, 204);
+    padding: 5px;
     border-radius: 10px 10px 10px 10px;
     text-decoration: none;
 }
 
 body {
     background-color: rgb(238, 228, 211);
-}
-
-.main-content {
-    width: 75%;
-}
-
-.content {
-    display: flex;
-    align-items: center; /* This will center the items vertically */
-}
-
-.content ul {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    font-size: 30px;
-}
-
-.content h2 {
-    margin-right: 20px;
-    font-size: 40px;
-    border-right: 5px solid #000; 
-    padding-right: 20px; 
-}
-
-.content h3 {
-    margin-right: 20px; 
-    font-size: 40px;
-    border-right: 5px solid #000; 
-    padding-right: 20px; 
-}
-
-.content h4 {
-    margin-right: 20px;
-    font-size: 40px;
-    border-right: 5px solid #000;
-    padding-right: 20px;
 }
 
 #hero {
@@ -125,4 +87,90 @@ footer {
     text-align: center;
     background-color: tan;
     border-radius: 10px 10px 10px 10px;
+}
+
+/* Main content */
+
+.sectionContent {
+    width: 80%;
+    margin: 12px;
+    padding: 12px;
+    border-left: solid 3px black;
+    font-size: large;
+}
+
+.sectionTitle {
+    width: 20%;
+    text-align: center;
+    margin: 12px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#aboutMe .sectionContent {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#aboutMe p {
+    margin-left: 12px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #ffffffbf;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img[src="assets/images/PersonalPhoto.jpeg"] {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+}
+
+.placeholder {
+    width: 300px; 
+    height: 300px; 
+    background-color: #eee; 
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder p {
+    text-align: center;
+}
+
+/* This makes my personal photo wiggle */
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+    animation: wiggle 1s infinite;
 }
