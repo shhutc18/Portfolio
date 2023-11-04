@@ -6,6 +6,9 @@ header {
     justify-content: space-between;
     margin-bottom: 0;
     border-radius: 10px 10px 0px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 0;
 }
 
 nav {
@@ -103,6 +106,9 @@ footer {
 
 #aboutMe {
     border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
 }
 
 #myWork {
