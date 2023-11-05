@@ -1,5 +1,4 @@
 :root {
-    /* declare a variable with `--` syntax */
     --dark: rgb(78, 48, 36);
     --tan: tan;
 }
@@ -51,9 +50,9 @@ nav {
 }
 
 nav a {
-    width: 100%; /* Ensures the links take up the full width of the nav bar */
-    box-sizing: border-box; /* Ensures padding and border are included in the link's total width */
-    padding: 0 10px; /* Adds 10px of padding to the left and right of the links */
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 0 10px;
 }
 
 nav ul {
@@ -268,6 +267,10 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     .first-app {
         width: 300px;
         height: 630px;
+    }
+
+    section {
+        flex-direction: column;
     }
 
     figure img {
