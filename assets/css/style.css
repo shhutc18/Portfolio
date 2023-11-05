@@ -44,6 +44,12 @@ nav {
     justify-content: space-between;
 }
 
+nav a {
+    width: 100%; /* Ensures the links take up the full width of the nav bar */
+    box-sizing: border-box; /* Ensures padding and border are included in the link's total width */
+    padding: 0 10px; /* Adds 10px of padding to the left and right of the links */
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -126,13 +132,14 @@ section {
     margin: 12px;
     font-size: 32px;
     font-weight: bold;
+    padding: 30px;
 }
 
 
 #aboutMe p {
     margin-left: 12px;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 #contactMe ul {
@@ -217,22 +224,6 @@ footer {
     border-radius: 10px 10px 10px 10px;
 }
 
-
-
-/* This makes my personal photo wiggle */
-
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(0deg); }
-}
-
-.wiggle {
-    animation: wiggle 1s infinite;
-}
-
 /* This adjusts the size of my personal photo in About Me */
 
 img[src="assets/images/PersonalPhoto.jpeg"] {
@@ -244,7 +235,6 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
 
 /* Media queries */
 
-/* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
     header {
         flex-direction: column;
@@ -255,9 +245,9 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
         flex-direction: column;
         align-items: center;
     }
+    
   }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -267,5 +257,15 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     nav {
         flex-direction: column;
         align-items: center;
+    }
+
+    .first-app {
+        width: 300px;
+        height: 630px;
+    }
+
+    figure img {
+        width: 100%; /* Ensures the image takes up the full width of its container */
+        height: auto; /* Adjusts the height automatically based on the width */
     }
 }
