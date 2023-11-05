@@ -1,3 +1,10 @@
+body {
+    background-color: rgb(238, 228, 211);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: tan;
@@ -10,6 +17,22 @@ header {
     width: 100%;
     padding: 20px 0;
 }
+
+a {
+    position: relative;
+    display: inline-block;
+}
+
+h1 {
+    border: 2px solid white;
+    padding: 10px; 
+    background-color: white;
+    margin-left: 0;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 8px 8px 4px 0px rgb(70, 68, 68);
+}
+
+/* Navigation bar items */
 
 nav {
     padding-top: 15px;
@@ -29,27 +52,23 @@ nav ul li {
     margin-right: 20px;
 }
 
-body {
-    background-color: rgb(238, 228, 211);
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-#hero {
-    width: 100%;
-    height: 30vh;
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(211, 204, 204);
     border: none;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-h1 {
-    border: 2px solid white;
-    padding: 10px; 
-    background-color: white;
-    margin-left: 0;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 8px 8px 4px 0px rgb(70, 68, 68);
+.nav-button:hover {
+    background-color: whitesmoke;
+    color: rgb(78, 48, 36);
 }
+
+/* Hero image and caption */
 
 figure {
     display: block;
@@ -62,6 +81,8 @@ figure {
 figure img {
     margin: 0;
     border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: 30vh;
 }
 
 figcaption {
@@ -77,16 +98,17 @@ figcaption {
     border-radius: 10px 0px 0px 10px;
 }
 
-
-/* Footer elements */
-
-footer {
-    text-align: center;
-    background-color: tan;
-    border-radius: 10px 10px 10px 10px;
-}
-
 /* Main content */
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #ffffffbf;
+    border-radius: 10px;
+}
 
 .sectionContent {
     width: 80%;
@@ -104,40 +126,14 @@ footer {
     font-weight: bold;
 }
 
-#aboutMe {
-    border-radius: 10px;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 10px;
-}
-
-#myWork {
-    border-radius: 10px;
-}
-
-#contactMe {
-    border-radius: 10px;
-}
-
-#aboutMe .sectionContent {
-    display: flex;
-    flex-direction: row;
-}
-
 
 #aboutMe p {
     margin-left: 12px;
     text-align: center;
+    padding: 0 20px;
 }
 
-section {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    background-color: #ffffffbf;
-}
+/* Still not sure about below */
 
 .flex-container {
     display: flex;
@@ -151,13 +147,26 @@ section {
     flex-wrap: wrap;
 }
 
-img[src="assets/images/PersonalPhoto.jpeg"] {
-    width: 200px; 
-    height: 200px;
-    border-radius: 50%;
+#contactMe ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
-.placeholder {
+#contactMe ul li {
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* This contains info regarding my project links/boxes */
+
+.workLink {
     width: 300px; 
     height: 300px; 
     background-color: tan;
@@ -169,7 +178,7 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     border-radius: 10px;
 }
 
-.placeholder p {
+.workLink p {
     text-align: center;
     text-decoration: none;
     font-size: 30px;
@@ -177,6 +186,39 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     font-weight: bold;
     font-family: 'Brush Script MT', cursive;
 }
+
+.workLink:hover {
+    background-color: whitesmoke;
+    color: rgb(78, 48, 36);
+}
+
+/* This changes the pre-work project box size. Acceptance criteria stated that the first application needed to be larger than the rest. */
+
+.first-app {
+    width: 630px;
+    height: 300px;
+}
+
+/* This adds titles to the boxes under My Work */
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(78, 48, 36);
+    font-size: 20px;
+}
+
+/* Footer elements */
+
+footer {
+    text-align: center;
+    background-color: tan;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
 
 /* This makes my personal photo wiggle */
 
@@ -192,42 +234,11 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     animation: wiggle 1s infinite;
 }
 
-/* Navigation Buttons */
+/* This adjusts the size of my personal photo in About Me */
 
-.nav-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: rgb(211, 204, 204);
-    border: none;
-    border-radius: 10px 10px 10px 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+img[src="assets/images/PersonalPhoto.jpeg"] {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(78, 48, 36);
 }
-
-.nav-button:hover {
-    background-color: whitesmoke;
-    color: rgb(78, 48, 36);
-}
-
-.placeholder:hover {
-    background-color: whitesmoke;
-    color: rgb(78, 48, 36);
-}
-
-#contactMe ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-#contactMe ul li {
-    margin-right: 100px;
-    font-size: 20px;
-}
-
-.prework-project {
-    width: 630px;
-    height: 300px;
-}
-
