@@ -40,6 +40,8 @@ nav {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -133,6 +135,14 @@ section {
     padding: 0 20px;
 }
 
+#contactMe ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 /* Still not sure about below */
 
 .flex-container {
@@ -145,17 +155,6 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#contactMe ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-#contactMe ul li {
-    margin-right: 150px;
-    font-size: 20px;
 }
 
 
@@ -241,4 +240,32 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     height: 200px;
     border-radius: 50%;
     border: 5px solid rgb(78, 48, 36);
+}
+
+/* Media queries */
+
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
