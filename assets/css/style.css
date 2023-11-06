@@ -1,7 +1,11 @@
+/* CSS has been organized to follow semantic structure */
+
 :root {
     --dark: rgb(78, 48, 36);
     --tan: tan;
 }
+
+/* Elements Selectors */
 
 body {
     background-color: rgb(238, 228, 211);
@@ -37,8 +41,6 @@ h1 {
     box-shadow: 8px 8px 4px 0px rgb(70, 68, 68);
 }
 
-/* Navigation bar items */
-
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -64,24 +66,6 @@ nav ul {
 nav ul li {
     margin-right: 20px;
 }
-
-.nav-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: rgb(211, 204, 204);
-    border: none;
-    border-radius: 10px 10px 10px 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: whitesmoke;
-    color: var(--dark);
-}
-
-/* Hero image and caption */
 
 figure {
     display: block;
@@ -111,8 +95,6 @@ figcaption {
     border-radius: 10px 0px 0px 10px;
 }
 
-/* Main content */
-
 section {
     display: flex;
     align-items: center;
@@ -121,6 +103,30 @@ section {
     margin-bottom: 12px;
     background-color: #ffffffbf;
     border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--tan);
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Class Selectors */
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(211, 204, 204);
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: whitesmoke;
+    color: var(--dark);
 }
 
 .sectionContent {
@@ -140,6 +146,65 @@ section {
     padding: 30px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.workLink {
+    width: 300px; 
+    height: 300px; 
+    background-color: var(--tan);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.workLink p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--dark);
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.workLink:hover {
+    background-color: whitesmoke;
+    color: var(--dark);
+    opacity: 0.5;
+}
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--dark);
+    font-size: 20px;
+}
+
+div.image-title.module-2-challenge {
+    color: white;
+}
+
+.first-app {
+    width: 630px;
+    height: 300px;
+}
+
+/* ID Selectors */
 
 #aboutMe p {
     margin-left: 12px;
@@ -155,84 +220,6 @@ section {
 #contactMe ul li {
     margin: 0 50px;
     border-bottom: 4px solid var(--dark)
-}
-
-/* Still not sure about below */
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.flex-container2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
-
-
-
-
-
-/* This contains info regarding my project links/boxes */
-
-.workLink {
-    width: 300px; 
-    height: 300px; 
-    background-color: var(--tan);
-    padding: 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.workLink p {
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    color: var(--dark);
-    font-weight: bold;
-    font-family: 'Brush Script MT', cursive;
-}
-
-.workLink:hover {
-    background-color: whitesmoke;
-    color: var(--dark);
-}
-
-div.image-title.module-2-challenge {
-    color: white;
-}
-
-/* This changes the pre-work project box size. Acceptance criteria stated that the first application needed to be larger than the rest. */
-
-.first-app {
-    width: 630px;
-    height: 300px;
-}
-
-/* This adds titles to the boxes under My Work */
-
-.image-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--dark);
-    font-size: 20px;
-}
-
-/* Footer elements */
-
-footer {
-    text-align: center;
-    background-color: var(--tan);
-    border-radius: 10px 10px 10px 10px;
 }
 
 /* This adjusts the size of my personal photo in About Me */
@@ -268,9 +255,6 @@ img[src="assets/images/PersonalPhoto.jpeg"] {
     nav {
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Ensures the nav bar takes up the full width of its container */
-        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-        padding: 0 10px; /* Adds 20px of padding to the left and right of the nav bar */
     }
 
     .first-app {
