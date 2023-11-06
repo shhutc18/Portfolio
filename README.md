@@ -22,7 +22,7 @@ https://github.com/shhutc18/Module-2-Challenge
 
 ## Screenshot
 
-<img src="./assets/images/PortfolioFinished.jpg"
+<img src="./assets/images/FinishedApplication.jpg">
 
 ## License
 
