@@ -205,6 +205,10 @@ section {
     color: var(--dark);
 }
 
+div.image-title.module-2-challenge {
+    color: white;
+}
+
 /* This changes the pre-work project box size. Acceptance criteria stated that the first application needed to be larger than the rest. */
 
 .first-app {

@@ -22,8 +22,7 @@ https://github.com/shhutc18/Module-2-Challenge
 
 ## Screenshot
 
-<!-- Screeenshot of deployed webpage goes here -->
-<!-- <img src="./assets/images/shhutc18.DeployedWebpage.jpg"> -->
+<img src="./assets/images/PortfolioFinished.jpg"
 
 ## License
 
